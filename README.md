@@ -16,10 +16,10 @@ a miniprogram of weather flower shop
 `
 
 常用属性：
-		- indicator-dots：是否显示面板指示点
-		- autoplay：是否自动切换
-		- interval：自动切换时间间隔
-		- duration：滑动动画时长
+	1.indicator-dots：是否显示面板指示点
+	2.autoplay：是否自动切换
+	3.interval：自动切换时间间隔
+	4.duration：滑动动画时长
 		
 swiper-item仅可放置在swiper组件中，并且宽高自动设置为100%。
 
@@ -35,7 +35,7 @@ swiper-item仅可放置在swiper组件中，并且宽高自动设置为100%。
 通过navigator完成页面跳转
 
 常用属性：
-		- url：当前小程序内的跳转链接
-		- open-type：跳转方式
+	1.url：当前小程序内的跳转链接
+	2.open-type：跳转方式
 		
-其他属性参考文档 [navigator](https://developers.weixin.qq.com/miniprogram/dev/component/navigator.html)
+其他属性参考文档 [官方文档-navigator](https://developers.weixin.qq.com/miniprogram/dev/component/navigator.html)
