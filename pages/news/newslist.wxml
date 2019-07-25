@@ -1,0 +1,6 @@
+<!--pages/news/newslist.wxml-->
+<view class="newsList" style="width:100%">
+    <block wx:for="{{showNewsData}}" wx:key="{{item.index}}">
+      <navigator url="../news/news?title={{item.tip}}" class="newsTxt">【{{item.newsTitle}}】{{item.newsTxt}}...</navigator>
+    </block>
+  </view>

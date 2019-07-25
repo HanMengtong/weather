@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view wx:if="{{!hasUserInfo && canIUse}}" class="userinfo-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取信息 </view>
+    <block wx:else>
+      <view class="userinfo-avatar">
+        <image bindtap="bindViewTap"  src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      </view>
+      <view class="userinfo-timeTxt">{{timeTxt}}好，{{userInfo.nickName}}</view>
+    </block>
+  </view>
+  <swiper class='indexBanner' indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{indexBanner}}" wx:key="{{item.index}}">
+      <swiper-item class="swiperItem">
+        <image src="{{item}}" style="width:100%"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="noticeView" style="width:100%;display:flex">
+    <image class="noticeIcon" src="../../img/notice2.png"></image>
+    <text class='title'>气候沙龙</text>
+    <navigator class="title titleMore" url="../news/newslist">更多</navigator>
+  </view>
+  <view class="newsList" style="width:100%">
+    <block wx:for="{{showNewsData}}" wx:key="{{item.index}}">
+      <navigator url="../news/news?title={{item.tip}}" class="newsTxt">【{{item.newsTitle}}】{{item.newsTxt}}...</navigator>
+    </block>
+  </view>
+
+</view>

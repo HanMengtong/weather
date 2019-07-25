@@ -1,0 +1,65 @@
+@import "../../common/lib/weui.wxss";
+
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  padding: 10rpx 0;
+  background: rgba(70,186,64,.3);
+}
+
+.userinfo-btn{
+  float: right;
+  font: 22rpx/80rpx arial;
+  margin-right: 20rpx;
+}
+
+.userinfo-avatar {
+  flex: 0 1 80rpx;
+  height: 80rpx;
+  margin: 0 20rpx;
+  
+}
+.userinfo-avatar image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.userinfo-timeTxt{
+  flex: 0 1 100%;
+  font: 30rpx/80rpx arial;
+  color: #666;
+}
+
+.indexBanner {
+  width: 100%;
+  height: 350rpx;
+}
+.swiperItem{
+  display: flex;
+  align-items: center;
+}
+
+.noticeIcon{
+  flex: 0 1 38rpx;
+  height: 36rpx;
+  margin: 20rpx;
+}
+.title{
+  flex: 0 1 100%;
+  font: 36rpx/80rpx arial;
+  color: #666;
+}
+.titleMore{
+  flex: 0 1 100rpx;
+  font-size: 26rpx;
+  color: #ee3535;
+}
+
+.newsTxt{
+  width: 100%;
+  font: 30rpx/80rpx arial;
+  color: #666;
+  padding-left: 20rpx;
+}

@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/lists",
+    "pages/shop/shop",
+    "pages/center/center",
+    "pages/news/news",
+    "pages/news/newslist"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WEATHER",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/index.png",
+        "selectedIconPath": "img/indexS.png"
+      },
+      {
+        "pagePath": "pages/list/lists",
+        "text": "展示",
+        "iconPath": "img/list.png",
+        "selectedIconPath": "img/listS.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "买买买",
+        "iconPath": "img/shop.png",
+        "selectedIconPath": "img/shopS.png"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "个人中心",
+        "iconPath": "img/center.png",
+        "selectedIconPath": "img/centerS.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
