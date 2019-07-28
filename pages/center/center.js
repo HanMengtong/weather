@@ -1,5 +1,7 @@
 // pages/center/center.js
+let newsData = require("../../data.js");
 const app = getApp()
+console.log(newsData.salonNews)
 Page({
 
   /**

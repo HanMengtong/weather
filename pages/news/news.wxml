@@ -1,2 +1,10 @@
 <!--pages/news.wxml-->
-<text>pages/news.wxml</text>
+<view class="newsContainer">
+  <view class="newsBg">
+    <image src="../../img/indexBanner2.jpeg"></image>
+  </view>
+  <text class='title'>【第一期沙龙】</text>
+  <text class="newsTime">{{newsTime}}</text>
+  <text class="newsContent">正在预订中～199一位，两位或以上同行九折优惠!正在预订中～199一位，两位或以上同行九折优惠!正在预订中～199一位，两位或以上同行九折优惠!正在预订中～199一位，两位或以上同行九折优惠!正在预订中～199一位，两位或以上同行九折优惠!</text>
+  
+</view>

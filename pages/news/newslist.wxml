@@ -1,6 +1,16 @@
 <!--pages/news/newslist.wxml-->
-<view class="newsList" style="width:100%">
-    <block wx:for="{{showNewsData}}" wx:key="{{item.index}}">
-      <navigator url="../news/news?title={{item.tip}}" class="newsTxt">【{{item.newsTitle}}】{{item.newsTxt}}...</navigator>
-    </block>
+<view class="container">
+  <view class="newsBg">
+    <image src="../../img/indexBanner3.jpeg"></image>
   </view>
+  <view class='title'>
+    <!-- <image src="../../img/logo.png"></image> -->
+    <text>气候见闻</text>
+  </view>
+  <view class="newsList" style="width:100%">
+    <block wx:for="{{showData}}" wx:key="{{item.index}}">
+      <navigator url="../news/news?title={{item.tip}}" class="newsTxt" hover-class="navigator-hover">【{{item.newsTitle}}】{{item.newsTxt}}...</navigator>
+    </block>
+    <text class="clickMore" bindtap="addMore">{{addMoreTxt}}</text>
+  </view>
+</view>

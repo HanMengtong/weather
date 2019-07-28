@@ -19,7 +19,7 @@
   </swiper>
   <view class="noticeView" style="width:100%;display:flex">
     <image class="noticeIcon" src="../../img/notice2.png"></image>
-    <text class='title'>气候沙龙</text>
+    <text class='title'>气候见闻</text>
     <navigator class="title titleMore" url="../news/newslist">更多</navigator>
   </view>
   <view class="newsList" style="width:100%">

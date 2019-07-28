@@ -1,5 +1,4 @@
 let newsData = require("../../data.js");
-console.log(newsData)
 //index.js
 //获取应用实例
 const app = getApp()
@@ -17,15 +16,7 @@ Page({
     autoplay: true,
     interval: 2000,
     duration: 500,
-    newsData: newsData.salonNews,
     showNewsData: {}
-  },
-  //事件处理函数
-  bindViewTap: function(e) {
-    console.log(e)
-    wx.navigateTo({
-      url: '../center/center'
-    })
   },
   onLoad: function () {
     //获取首页时间
@@ -80,15 +71,13 @@ Page({
       })
     }
     //沙龙新闻字数截取
-    let showNewsData = newsData.salonNews.splice(0,3);
-    console.log(showNewsData)
+    let showNewsData = newsData.salonNews;
     showNewsData.forEach((e,i)=>{
       e.newsTxt = e.newsContent.split("", 16).join("");
-       this.setData({
-         showNewsData: showNewsData
-       })
     })
-    
+    this.setData({
+      showNewsData: showNewsData.slice(0, 3)
+    })
   },
   onShow:function(){
     
